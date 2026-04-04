@@ -1,0 +1,151 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0%" stop-color="#1B5E20"/>
+      <stop offset="100%" stop-color="#0A2E0D"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#B8860B"/>
+      <stop offset="50%" stop-color="#F0C040"/>
+      <stop offset="100%" stop-color="#B8860B"/>
+    </linearGradient>
+    <linearGradient id="stemG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#81C784"/>
+      <stop offset="100%" stop-color="#2E7D32"/>
+    </linearGradient>
+    <linearGradient id="lL" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#66BB6A"/>
+      <stop offset="100%" stop-color="#2E7D32"/>
+    </linearGradient>
+    <linearGradient id="lR" x1="1" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#81C784"/>
+      <stop offset="100%" stop-color="#388E3C"/>
+    </linearGradient>
+    <linearGradient id="lT" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#2E7D32"/>
+      <stop offset="100%" stop-color="#A5D6A7"/>
+    </linearGradient>
+    <linearGradient id="b1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFD740"/>
+      <stop offset="100%" stop-color="#C8970A"/>
+    </linearGradient>
+    <linearGradient id="b2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFE57F"/>
+      <stop offset="100%" stop-color="#F0C040"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#4CAF50" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#4CAF50" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="clip"><rect width="512" height="512" rx="114"/></clipPath>
+  </defs>
+
+  <!-- Fond arrondi -->
+  <rect width="512" height="512" rx="114" fill="url(#bg)"/>
+
+  <!-- Bande or bas -->
+  <rect y="430" width="512" height="82" fill="url(#gold)" clip-path="url(#clip)"/>
+
+  <!-- Reflet subtil haut gauche -->
+  <ellipse cx="160" cy="100" rx="140" ry="70" fill="#ffffff" opacity="0.04"/>
+
+  <!-- BARRES HISTOGRAMME -->
+  <rect x="80"  y="310" width="48" height="80"  rx="8" fill="url(#b1)" opacity="0.75"/>
+  <rect x="140" y="275" width="48" height="115" rx="8" fill="url(#b1)" opacity="0.85"/>
+  <rect x="200" y="235" width="48" height="155" rx="8" fill="url(#b2)"/>
+  <rect x="260" y="190" width="48" height="200" rx="8" fill="url(#b2)"/>
+  <rect x="320" y="140" width="48" height="250" rx="8" fill="url(#b2)"/>
+
+  <!-- Ligne de base -->
+  <line x1="70" y1="395" x2="380" y2="395" stroke="#F0C040" stroke-width="2.5" opacity="0.4"/>
+
+  <!-- COURBE EXPONENTIELLE (Bézier cubique) -->
+  <path d="M80 385
+           C110 378, 140 368, 168 352
+           C196 336, 215 314, 238 290
+           C261 266, 278 236, 302 208
+           C326 180, 345 155, 368 122"
+        stroke="#FFE57F"
+        stroke-width="7"
+        fill="none"
+        stroke-linecap="round"/>
+  <!-- Lueur courbe -->
+  <path d="M80 385
+           C110 378, 140 368, 168 352
+           C196 336, 215 314, 238 290
+           C261 266, 278 236, 302 208
+           C326 180, 345 155, 368 122"
+        stroke="#F0C040"
+        stroke-width="2.5"
+        fill="none"
+        stroke-linecap="round"
+        opacity="0.35"/>
+  <!-- Flèche au bout de la courbe -->
+  <circle cx="368" cy="122" r="10" fill="#FFE57F"/>
+  <path d="M355 130 L372 116 L380 134" fill="#FFE57F"/>
+
+  <!-- PLANTE CENTRALE -->
+  <!-- Tige -->
+  <path d="M344 395 Q342 350 340 310 Q338 280 336 245"
+        stroke="url(#stemG)" stroke-width="10" fill="none" stroke-linecap="round"/>
+  <!-- Tige ramif gauche -->
+  <path d="M339 320 Q320 304 308 282"
+        stroke="url(#stemG)" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <!-- Tige ramif droite -->
+  <path d="M338 290 Q358 272 370 252"
+        stroke="url(#stemG)" stroke-width="5" fill="none" stroke-linecap="round"/>
+
+  <!-- Feuille gauche basse -->
+  <path d="M339 320
+           C322 310, 296 296, 280 275
+           C266 256, 264 236, 272 220
+           C284 238, 296 256, 308 270
+           C320 283, 332 298, 339 314 Z"
+        fill="url(#lL)" opacity="0.96"/>
+  <path d="M339 314 C316 285 275 248 272 220"
+        stroke="#1B5E20" stroke-width="1.8" fill="none" opacity="0.6"/>
+
+  <!-- Feuille droite -->
+  <path d="M338 290
+           C350 278, 374 262, 386 242
+           C396 224, 394 204, 386 190
+           C374 206, 362 222, 352 238
+           C342 253, 336 272, 338 288 Z"
+        fill="url(#lR)" opacity="0.96"/>
+  <path d="M338 288 C352 264 384 222 386 190"
+        stroke="#1B5E20" stroke-width="1.8" fill="none" opacity="0.6"/>
+
+  <!-- Feuille haute centrale -->
+  <path d="M336 245
+           C328 228, 324 208, 324 188
+           C324 168, 330 150, 336 136
+           C342 150, 348 168, 348 188
+           C348 208, 344 228, 336 245 Z"
+        fill="url(#lT)" opacity="0.96"/>
+  <path d="M336 245 L336 136" stroke="#1B5E20" stroke-width="1.8" fill="none" opacity="0.5"/>
+
+  <!-- Bourgeon terminal -->
+  <circle cx="336" cy="132" r="10" fill="#A5D6A7" opacity="0.9"/>
+  <circle cx="336" cy="120" r="6" fill="#C8E6C9" opacity="0.8"/>
+
+  <!-- INSIGNE % -->
+  <!-- Halo glow -->
+  <circle cx="440" cy="90" r="55" fill="url(#glow)"/>
+  <!-- Cercle externe -->
+  <circle cx="440" cy="90" r="38" fill="none" stroke="#F0C040" stroke-width="4" opacity="0.85"/>
+  <!-- Fond intérieur -->
+  <circle cx="440" cy="90" r="28" fill="#1B5E20" stroke="#C8970A" stroke-width="2.5"/>
+  <!-- Symbole % -->
+  <text x="440" y="100" text-anchor="middle" font-family="Georgia, serif" font-weight="700" font-size="28" fill="#F0C040">%</text>
+
+  <!-- TEXTE AGRI -->
+  <text x="256" y="462" text-anchor="middle"
+        font-family="Georgia, serif" font-weight="700" font-size="80"
+        fill="#FFFFFF" letter-spacing="8">AGRI</text>
+  <!-- Ligne séparation -->
+  <line x1="85" y1="432" x2="427" y2="432" stroke="#0A2E0D" stroke-width="1.5" opacity="0.5"/>
+  <!-- TEXTE ACCÈS -->
+  <text x="256" y="500" text-anchor="middle"
+        font-family="Georgia, serif" font-weight="700" font-size="60"
+        fill="#F0C040" letter-spacing="6">ACCÈS</text>
+</svg>
