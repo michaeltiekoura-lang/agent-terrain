@@ -1,0 +1,33 @@
+{
+  "name": "AgriAccès Côte d'Ivoire",
+  "description": "Plateforme qui accompagne les producteurs agricoles ivoiriens : collecte terrain, suivi des producteurs, accès au marché et rapports de performance.",
+  "audiences": [
+    "Producteurs et coopératives agricoles",
+    "Acheteurs, exportateurs et transformateurs",
+    "Partenaires institutionnels, ONG et bailleurs",
+    "Jeunes intéressés par l'agriculture"
+  ],
+  "tone": "Professionnel, chaleureux et concret. Phrases simples, vocabulaire accessible, fierté du terroir ivoirien. Jamais condescendant.",
+  "languages": ["fr"],
+  "content_pillars": [
+    "Conseils pratiques aux producteurs (saison, intrants, post-récolte)",
+    "Histoires de producteurs et d'agents terrain",
+    "Prix et tendances des marchés agricoles",
+    "Coulisses et actualités d'AgriAccès",
+    "Impact : chiffres, rapports, témoignages"
+  ],
+  "do_not": [
+    "Inventer des chiffres, des prix ou des témoignages",
+    "Faire des promesses de rendement ou de revenu",
+    "Aborder la politique"
+  ],
+  "hashtags": ["#AgriAccès", "#CôteDIvoire", "#Agriculture"],
+  "timezone": "Africa/Abidjan",
+  "accounts": {
+    "facebook": { "enabled": true, "posts_per_week": 4, "handle": "AgriAccès" },
+    "instagram": { "enabled": true, "posts_per_week": 3, "handle": "@agriacces" },
+    "linkedin": { "enabled": true, "posts_per_week": 2, "handle": "AgriAccès" },
+    "x": { "enabled": false, "posts_per_week": 5, "handle": "@agriacces" },
+    "tiktok": { "enabled": false, "posts_per_week": 2, "handle": "@agriacces" }
+  }
+}

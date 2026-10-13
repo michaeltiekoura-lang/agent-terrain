@@ -1,0 +1,19 @@
+{
+  "name": "social-agent",
+  "version": "1.0.0",
+  "description": "Agent IA qui traite vos requêtes, planifie le contenu hebdomadaire et gère vos comptes sociaux",
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=22.9"
+  },
+  "scripts": {
+    "chat": "node --env-file-if-exists=.env src/cli.js",
+    "plan": "node --env-file-if-exists=.env src/cli.js plan",
+    "publish-due": "node --env-file-if-exists=.env src/cli.js publish-due",
+    "test": "node --test test/*.test.js"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.133.0"
+  }
+}
